@@ -3,11 +3,11 @@
 <head>
     <x-head/>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
 <x-navbar/>
 
-<div class="container">
+<div class="container flex-grow-1">
     <div class="row">
 
         <div class="col-md-8">
@@ -34,14 +34,10 @@
 
         </div>
 
-        <div class="row">
-            <x-footer/>
-        </div>
-
     </div>
-
-
 </div>
+
+<x-footer/>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
