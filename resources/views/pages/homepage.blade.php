@@ -12,6 +12,14 @@
         </x-slot:title>
     </h1>
 
+    <p>Gemaakt door: {{ $name }}</p>
+    <p>Vandaag is het {{ $today }} en er staan {{ $brandCount }} merken in de lijst.</p>
+
+    <ul>
+        @foreach($skills as $skill)
+            <li>{{ $skill }}</li>
+        @endforeach
+    </ul>
 
     <?php
     $size = count($brands);
