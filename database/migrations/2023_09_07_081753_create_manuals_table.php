@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('manuals', function (Blueprint $table) {
             $table->id();
+            $table->unsignedInteger('visit_count')->default(0);
             $table->unsignedBigInteger('brand_id');
             $table->string('name');
             $table->bigInteger('filesize');
