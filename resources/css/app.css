@@ -43,3 +43,35 @@ main, #app, .content {
     padding-right: 1rem;
     width: 100%;
 }
+
+/* ===== Ticket 03: homepage ===== */
+
+/* Introtekst: groter en dikker */
+.intro-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+/* Brands-lijst: achtergrond in dezelfde kleurfamilie als navbar/footer (#1f2937) */
+.brands-list {
+    background-color: #e5e7eb;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+}
+
+/* Letterkoppen passen bij de navbar/footerkleur */
+.brands-list h2 {
+    color: #1f2937;
+}
+
+/* Links: goed zichtbaar, maar niet het standaard blauw */
+.brands-list a {
+    color: #9a3412;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.brands-list a:hover {
+    color: #5c1f09;
+}
