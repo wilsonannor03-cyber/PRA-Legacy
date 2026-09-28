@@ -1,6 +1,5 @@
-
 <footer class="site-footer">
-    <div class="container">
+    <div class="container footer-inner">
         <div class="site-footer__grid">
             <div>
                 <h3 class="site-footer__heading">Over ons</h3>
@@ -33,7 +32,6 @@
         </div>
     </div>
 </footer>
-
 
 <!-- analytics code -->
 <script type="text/javascript">

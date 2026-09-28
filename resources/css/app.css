@@ -7,3 +7,39 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+/* Zorg ervoor dat de pagina de volledige hoogte inneemt voor de sticky footer */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Zorg dat de hoofdcontent groeit, zodat de footer naar beneden wordt geduwd */
+main, #app, .content {
+    flex: 1;
+}
+
+/* De footer: paginabreed met de achtergrondkleur */
+.site-footer {
+    width: 100%;
+    background-color: #1f2937; /* Pas dit eventueel aan naar dezelfde kleurcode als je navbar */
+    color: #ffffff;
+    padding: 1.5rem 0;
+}
+
+/* Zorg ervoor dat zowel de container als de footer-inner netjes in het midden staan */
+.container,
+.site-footer .footer-inner {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+}
