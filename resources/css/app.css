@@ -111,8 +111,42 @@ main, #app, .content {
     color: rgba(255, 255, 255, 0.8);
 }
 
+.manual-download-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.4rem;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+    color: #ffffff;
+    font-size: 0.98rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.manual-download-button:hover {
+    background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
+    box-shadow: 0 8px 18px rgba(29, 78, 216, 0.22);
+    transform: translateY(-1px);
+}
+
+.manual-download-button:focus {
+    outline: 3px solid rgba(37, 99, 235, 0.25);
+    outline-offset: 2px;
+}
+
 @media (max-width: 767px) {
     .site-footer__grid {
         grid-template-columns: 1fr;
+    }
+
+    .manual-download-button {
+        display: flex;
+        width: 100%;
+        text-align: center;
     }
 }
