@@ -8,16 +8,6 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-@import 'tailwindcss';
-
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-}
-
 html, body {
     height: 100%;
     margin: 0;
@@ -94,7 +84,7 @@ main, #app, .content {
 .site-footer__text,
 .site-footer__list {
     margin: 0;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     line-height: 1.6;
     list-style: none;
     padding: 0;
@@ -116,9 +106,9 @@ main, #app, .content {
 .site-footer__bottom {
     margin-top: 1.5rem;
     padding-top: 1rem;
-    border-top: 1px solid rgba(255,255,255,0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
     font-size: 0.9rem;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 @media (max-width: 767px) {
