@@ -33,13 +33,21 @@ use App\Http\Controllers\ManualController;
 use App\Http\Controllers\ProductCategoryController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\LocaleController;
-Route::get('/manuals/popular', [ManualController::class, 'popular']);
+use App\Http\Controllers\ContactController;
 
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
+Route::get('/manuals/popular', [ManualController::class, 'popular']);
+Route::get('/', function() {
+    return view('index');
+});
 // Homepage
 Route::get('/', function () {
     $brands = Brand::all()->sortBy('name');
     return view('pages.homepage', compact('brands'));
 })->name('home');
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
 
 Route::get('/manual/{language}/{brand_slug}/', [RedirectController::class, 'brand']);
 Route::get('/manual/{language}/{brand_slug}/brand.html', [RedirectController::class, 'brand']);

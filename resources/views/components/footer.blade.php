@@ -1,5 +1,6 @@
 <footer class="site-footer">
     <div class="container footer-inner">
+
         <div class="site-footer__grid">
             <div>
                 <h3 class="site-footer__heading">Over ons</h3>
@@ -23,6 +24,8 @@
                     <li><a href="#" aria-label="Facebook">Facebook</a></li>
                     <li><a href="#" aria-label="Instagram">Instagram</a></li>
                     <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                    <a href="{{ route('contact') }}">Contact</a>
+
                 </ul>
             </div>
         </div>
