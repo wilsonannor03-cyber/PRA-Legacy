@@ -11,8 +11,7 @@ class Brand extends Model
 
     public function getNameUrlEncodedAttribute()
     {
-        $name_url_encoded = str_replace('/','',$this->name);
-
+        $name_url_encoded = str_replace('/', '', $this->name);
         return $name_url_encoded;
     }
 }

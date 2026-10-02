@@ -8,7 +8,6 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-/* Zorg ervoor dat de pagina de volledige hoogte inneemt voor de sticky footer */
 html, body {
     height: 100%;
     margin: 0;
@@ -20,20 +19,45 @@ body {
     min-height: 100vh;
 }
 
-/* Zorg dat de hoofdcontent groeit, zodat de footer naar beneden wordt geduwd */
 main, #app, .content {
     flex: 1;
 }
 
-/* De footer: paginabreed met de achtergrondkleur */
+.type-list {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.5rem 1.5rem;
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.type-list li {
+    min-width: 0;
+}
+
+.type-list a {
+    overflow-wrap: anywhere;
+}
+
+@media (min-width: 640px) {
+    .type-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .type-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
 .site-footer {
     width: 100%;
-    background-color: #1f2937; /* Pas dit eventueel aan naar dezelfde kleurcode als je navbar */
+    background-color: #1f2937;
     color: #ffffff;
     padding: 1.5rem 0;
 }
 
-/* Zorg ervoor dat zowel de container als de footer-inner netjes in het midden staan */
 .container,
 .site-footer .footer-inner {
     max-width: 1200px;
@@ -44,6 +68,7 @@ main, #app, .content {
     width: 100%;
 }
 
+<<<<<<< HEAD
 /* ===== Ticket 03: homepage ===== */
 
 /* Introtekst: groter en dikker */
@@ -74,4 +99,87 @@ main, #app, .content {
 
 .brands-list a:hover {
     color: #5c1f09;
+=======
+.site-footer__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.site-footer__heading {
+    margin: 0 0 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.site-footer__text,
+.site-footer__list {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    list-style: none;
+    padding: 0;
+}
+
+.site-footer__list li + li {
+    margin-top: 0.35rem;
+}
+
+.site-footer__list--links a {
+    color: #dbeafe;
+    text-decoration: none;
+}
+
+.site-footer__list--links a:hover {
+    text-decoration: underline;
+}
+
+.site-footer__bottom {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.manual-download-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.4rem;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+    color: #ffffff;
+    font-size: 0.98rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.manual-download-button:hover {
+    background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
+    box-shadow: 0 8px 18px rgba(29, 78, 216, 0.22);
+    transform: translateY(-1px);
+}
+
+.manual-download-button:focus {
+    outline: 3px solid rgba(37, 99, 235, 0.25);
+    outline-offset: 2px;
+}
+
+@media (max-width: 767px) {
+    .site-footer__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .manual-download-button {
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+>>>>>>> 9258ca9cb248d31e9af55c9469569e758290a6f1
 }
