@@ -22,7 +22,11 @@
             @if ( isset($_GET['q']) )
                 <x-search_results/>
             @else
-                {{ $slot }}
+                @isset($slot)
+                    {{ $slot }}
+                @else
+                    @yield('content')
+                @endisset
             @endif
 
             <ul class="breadcrumb">

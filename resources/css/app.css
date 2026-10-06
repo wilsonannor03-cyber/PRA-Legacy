@@ -68,7 +68,6 @@ main, #app, .content {
     width: 100%;
 }
 
-<<<<<<< HEAD
 /* ===== Ticket 03: homepage ===== */
 
 /* Introtekst: groter en dikker */
@@ -99,7 +98,8 @@ main, #app, .content {
 
 .brands-list a:hover {
     color: #5c1f09;
-=======
+}
+
 .site-footer__grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -181,5 +181,4 @@ main, #app, .content {
         width: 100%;
         text-align: center;
     }
->>>>>>> 9258ca9cb248d31e9af55c9469569e758290a6f1
 }
