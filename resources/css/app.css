@@ -8,7 +8,8 @@
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -19,7 +20,9 @@ body {
     min-height: 100vh;
 }
 
-main, #app, .content {
+main,
+#app,
+.content {
     flex: 1;
 }
 
@@ -56,6 +59,7 @@ main, #app, .content {
     background-color: #1f2937;
     color: #ffffff;
     padding: 1.5rem 0;
+    margin-top: auto;
 }
 
 .container,
@@ -104,12 +108,13 @@ main, #app, .content {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
+    align-items: start;
 }
 
 .site-footer__heading {
     margin: 0 0 0.75rem;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #ffffff;
 }
 
@@ -129,10 +134,12 @@ main, #app, .content {
 .site-footer__list--links a {
     color: #dbeafe;
     text-decoration: none;
+    transition: opacity 0.2s ease;
 }
 
 .site-footer__list--links a:hover {
     text-decoration: underline;
+    opacity: 0.9;
 }
 
 .site-footer__bottom {
@@ -182,3 +189,16 @@ main, #app, .content {
         text-align: center;
     }
 }
+
+/* ===== Ticket 04: stagebegeleider ===== */
+/* Bekijk Laravel docs: introduction, passing data to views. */
+/* Probeer een variabele door te geven aan de homepage en laat deze zichtbaar zijn. */
+
+/* ===== Ticket 08: database migration ===== */
+/* Gebruik Laravel migrations om een kolom aan een bestaande tabel toe te voegen. */
+/* Laat de wijziging zichtbaar zijn door de schema-informatie te controleren. */
+
+/* ===== Ticket 12: contactformulier ===== */
+/* Maak een nieuwe contactpagina met een contactformulier. */
+/* Zet een link naar deze pagina in de navbar en de footer. */
+/* Verwerk het formulier met een POST-request en sla het bericht op in een .txt-bestand. */
